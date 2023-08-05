@@ -9,7 +9,8 @@ import { RecipeCreateComponent } from './recipe-create/recipe-create.component';
 import { RecipeEditComponent } from './recipe-edit/recipe-edit.component';
 
 const appRoutes: Routes = [
-  // Your routes
+  { path: 'recipes', component: RecipeListComponent },
+  { path: 'create', component: RecipeCreateComponent },
 ];
 
 @NgModule({
