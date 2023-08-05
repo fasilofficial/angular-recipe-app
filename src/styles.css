@@ -1,1 +1,87 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation bar */
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  
+  /* Recipe list */
+  .recipe-list {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .recipe-item {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Recipe detail */
+  .recipe-detail {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  /* Recipe create and edit form */
+  .recipe-form {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .recipe-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .recipe-form input,
+  .recipe-form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .recipe-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .recipe-form button:hover {
+    background-color: #555;
+  }
+  
+  /* Error message */
+  .error-message {
+    color: red;
+    font-size: 14px;
+  }
+  
+  /* Success message */
+  .success-message {
+    color: green;
+    font-size: 14px;
+  }
+  

@@ -1,18 +1,31 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms'; // Add this line
+import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { RecipeListComponent } from './recipe-list/recipe-list.component';
+import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
+import { RecipeCreateComponent } from './recipe-create/recipe-create.component';
+import { RecipeEditComponent } from './recipe-edit/recipe-edit.component';
+
+const appRoutes: Routes = [
+  // Your routes
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RecipeListComponent,
+    RecipeDetailComponent,
+    RecipeCreateComponent,
+    RecipeEditComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule, // Add this line
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
